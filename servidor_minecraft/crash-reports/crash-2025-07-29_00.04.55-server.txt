@@ -1,0 +1,294 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  CharmLoadingPlugin (Charm-1.12.2-1.4.1.jar)
+  XaeroMinimapPlugin (Xaeros_Minimap_25.0.0_Forge_1.12.jar)
+  FutureMC (Future-MC-0.2.20.jar)
+  SecurityCraftLoadingPlugin ([1.12.2] SecurityCraft v1.9.12.jar)
+  CreativePatchingLoader (CreativeCore_v1.10.71_mc1.12.2.jar)
+  SSLoadingPlugin (SereneSeasons-1.12.2-1.2.18-universal.jar)
+  Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.15-1.12.2.jar)
+  ForgelinPlugin (Forgelin-1.8.4.jar)
+  SpartanWeaponry-MixinLoader (SpartanWeaponry-1.12.2-1.6.0.jar)
+  TransformLoader (DynamicSurroundings-1.12.2-3.6.3.jar)
+  ObfuscatePlugin (obfuscate-0.4.2-1.12.2.jar)
+  SurgeLoadingPlugin (Surge-1.12.2-2.0.79.jar)
+Contact their authors BEFORE contacting forge
+
+// But it works on my machine.
+
+Time: 7/29/25 12:04 AM
+Description: Exception while updating neighbours
+
+java.lang.IllegalArgumentException: Cannot get property PropertyInteger{name=level, clazz=class java.lang.Integer, values=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]} as it does not exist in BlockStateContainer{block=duneons:crystalblue, properties=[facing]}
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_177229_b(BlockStateContainer.java:201)
+	at net.minecraft.block.BlockDynamicLiquid.func_176374_a(BlockDynamicLiquid.java:190)
+	at net.minecraft.block.BlockDynamicLiquid.func_176376_e(BlockDynamicLiquid.java:234)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:138)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:106)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockStaticLiquid.func_176370_f(BlockStaticLiquid.java:35)
+	at net.minecraft.block.BlockStaticLiquid.func_189540_a(BlockStaticLiquid.java:28)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_189546_a(BlockStateContainer.java:481)
+	at net.minecraft.world.World.func_190524_a(World.java:551)
+	at net.minecraft.world.World.func_175685_c(World.java:496)
+	at net.minecraft.world.World.func_175722_b(World.java:440)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:381)
+	at net.minecraft.world.World.func_180501_a(World.java:361)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.World.func_189507_a(World.java:2682)
+	at net.minecraft.world.gen.feature.WorldGenLiquids.func_180709_b(WorldGenLiquids.java:88)
+	at net.minecraft.world.biome.BiomeDecorator.func_150513_a(BiomeDecorator.java:363)
+	at net.minecraft.world.biome.BiomeDecorator.func_180292_a(BiomeDecorator.java:88)
+	at net.minecraft.world.biome.Biome.func_180624_a(Biome.java:225)
+	at net.minecraft.world.biome.BiomePlains.func_180624_a(BiomePlains.java:106)
+	at net.minecraft.world.gen.ChunkGeneratorOverworld.func_185931_b(ChunkGeneratorOverworld.java:464)
+	at net.minecraft.world.chunk.Chunk.func_186034_a(Chunk.java:1019)
+	at net.minecraft.world.chunk.Chunk.func_186030_a(Chunk.java:999)
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:157)
+	at net.minecraft.server.MinecraftServer.func_71222_d(MinecraftServer.java:344)
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:314)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:270)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_177229_b(BlockStateContainer.java:201)
+	at net.minecraft.block.BlockDynamicLiquid.func_176374_a(BlockDynamicLiquid.java:190)
+	at net.minecraft.block.BlockDynamicLiquid.func_176376_e(BlockDynamicLiquid.java:234)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:138)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:106)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:133)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockStaticLiquid.func_176370_f(BlockStaticLiquid.java:35)
+	at net.minecraft.block.BlockStaticLiquid.func_189540_a(BlockStaticLiquid.java:28)
+	at net.minecraft.block.state.BlockStateContainer$StateImplementation.func_189546_a(BlockStateContainer.java:481)
+
+-- Block being updated --
+Details:
+	Source block type: ID #0 (tile.air // net.minecraft.block.BlockAir // minecraft:air)
+	Block: minecraft:lava[level=2]
+	Block location: World: (-265,13,277), Chunk: (at 7,0,5 in -17,17; contains blocks -272,0,272 to -257,255,287), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+Stacktrace:
+	at net.minecraft.world.World.func_190524_a(World.java:551)
+	at net.minecraft.world.World.func_175685_c(World.java:496)
+	at net.minecraft.world.World.func_175722_b(World.java:440)
+	at net.minecraft.world.World.markAndNotifyBlock(World.java:381)
+	at net.minecraft.world.World.func_180501_a(World.java:361)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.WorldServer.func_175654_a(WorldServer.java:551)
+	at net.minecraft.world.WorldServer.func_175684_a(WorldServer.java:531)
+	at net.minecraft.block.BlockDynamicLiquid.func_176213_c(BlockDynamicLiquid.java:306)
+	at net.minecraft.world.chunk.Chunk.func_177436_a(Chunk.java:614)
+	at net.minecraft.world.World.func_180501_a(World.java:343)
+	at net.minecraft.block.BlockDynamicLiquid.func_176375_a(BlockDynamicLiquid.java:175)
+	at net.minecraft.block.BlockDynamicLiquid.func_180650_b(BlockDynamicLiquid.java:153)
+	at net.minecraft.world.World.func_189507_a(World.java:2682)
+	at net.minecraft.world.gen.feature.WorldGenLiquids.func_180709_b(WorldGenLiquids.java:88)
+	at net.minecraft.world.biome.BiomeDecorator.func_150513_a(BiomeDecorator.java:363)
+	at net.minecraft.world.biome.BiomeDecorator.func_180292_a(BiomeDecorator.java:88)
+	at net.minecraft.world.biome.Biome.func_180624_a(Biome.java:225)
+	at net.minecraft.world.biome.BiomePlains.func_180624_a(BiomePlains.java:106)
+	at net.minecraft.world.gen.ChunkGeneratorOverworld.func_185931_b(ChunkGeneratorOverworld.java:464)
+	at net.minecraft.world.chunk.Chunk.func_186034_a(Chunk.java:1019)
+	at net.minecraft.world.chunk.Chunk.func_186030_a(Chunk.java:999)
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:157)
+	at net.minecraft.server.MinecraftServer.func_71222_d(MinecraftServer.java:344)
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:314)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:270)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Thread.java:750)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Linux (amd64) version 6.8.0-1030-azure
+	Java Version: 1.8.0_452, Private Build
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+	Memory: 2697829048 bytes (2572 MB) / 3114270720 bytes (2970 MB) up to 3817865216 bytes (3641 MB)
+	JVM Flags: 2 total; -Xms2G -Xmx4G
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 54 mods loaded, 54 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                 | Version        | Source                                          | Signature                                |
+	|:------ |:------------------ |:-------------- |:----------------------------------------------- |:---------------------------------------- |
+	| LCHIJA | minecraft          | 1.12.2         | minecraft.jar                                   | None                                     |
+	| LCHIJA | mcp                | 9.42           | minecraft.jar                                   | None                                     |
+	| LCHIJA | FML                | 8.0.99.99      | forge-1.12.2-14.23.5.2860.jar                   | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | forge              | 14.23.5.2860   | forge-1.12.2-14.23.5.2860.jar                   | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | creativecoredummy  | 1.0.0          | minecraft.jar                                   | None                                     |
+	| LCHIJA | xaerominimap_core  | 1.12.2-1.0     | minecraft.jar                                   | None                                     |
+	| LCHIJA | foamfixcore        | 7.7.4          | minecraft.jar                                   | None                                     |
+	| LCHIJA | obfuscate          | 0.4.2          | minecraft.jar                                   | None                                     |
+	| LCHIJA | securitycraft      | v1.9.12        | [1.12.2] SecurityCraft v1.9.12.jar              | None                                     |
+	| LCHIJA | cgm                | 0.15.3         | guns-0.15.3-1.12.2.jar                          | None                                     |
+	| LCHIJA | apexguns           | 0.1.2          | ApexGunAddon-1.12.2-0.1.2.jar                   | None                                     |
+	| LCHIJA | crafttweaker       | 4.1.20         | CraftTweaker2-1.12-4.1.20.699.jar               | None                                     |
+	| LCHIJA | jei                | 4.16.1.1013    | jei_1.12.2-4.16.1.1013.jar                      | None                                     |
+	| LCHIJA | appleskin          | 1.0.14         | AppleSkin-mc1.12-1.0.14.jar                     | None                                     |
+	| LCHIJA | baubles            | 1.5.2          | Baubles-1.12-1.5.2.jar                          | None                                     |
+	| LCHIJA | artifacts          | 1.12.2-1.2.4   | artifacts-1.12.2-1.2.4.jar                      | None                                     |
+	| LCHIJA | better_diving      | 1.5.8          | BetterDiving-1.12.2-1.5.8.jar                   | None                                     |
+	| LCHIJA | bettermineshafts   | 1.12.2-2.2.1   | BetterMineshaftsForge-1.12.2-2.2.1.jar          | None                                     |
+	| LCHIJA | bookworm           | 1.12.2-2.5.2.1 | bookworm-1.12.2-2.5.2.1.jar                     | None                                     |
+	| LCHIJA | charm              | 1.4            | Charm-1.12.2-1.4.1.jar                          | None                                     |
+	| LCHIJA | coralreef          | 2.0            | CoralReef-2.5-1.12.2.jar                        | None                                     |
+	| LCHIJA | crafttweakerjei    | 2.0.3          | CraftTweaker2-1.12-4.1.20.699.jar               | None                                     |
+	| LCHIJA | creativecore       | 1.10.0         | CreativeCore_v1.10.71_mc1.12.2.jar              | None                                     |
+	| LCHIJA | duneons            | 1.4            | dungeons_1.4.4_mc1.12.2 (not supported,fix).jar | None                                     |
+	| LCHIJA | sereneseasons      | 1.2.18         | SereneSeasons-1.12.2-1.2.18-universal.jar       | None                                     |
+	| LCHIJA | orelib             | 3.6.0.1        | OreLib-1.12.2-3.6.0.1.jar                       | 7a2128d395ad96ceb9d9030fbd41d035b435753a |
+	| LCHIJA | dsurround          | @VERSION@      | DynamicSurroundings-1.12.2-3.6.3.jar            | None                                     |
+	| LCHIJA | dynamictrees       | 1.12.2-0.9.29  | DynamicTrees-1.12.2-0.9.29.jar                  | None                                     |
+	| LCHIJA | falling_tree       | 2.4.0          | FallingTree-1.12.2-2.4.0.jar                    | None                                     |
+	| LCHIJA | foamfix            | @VERSION@      | foamfix-0.10.15-1.12.2.jar                      | None                                     |
+	| LCHIJA | forgelin           | 1.8.4          | Forgelin-1.8.4.jar                              | None                                     |
+	| LCHIJA | futuremc           | 0.2.6          | Future-MC-0.2.20.jar                            | None                                     |
+	| LCHIJA | gravestone         | 1.10.3         | gravestone-1.10.3.jar                           | None                                     |
+	| LCHIJA | waila              | 1.8.26         | Hwyla-1.8.26-B41_1.12.2.jar                     | None                                     |
+	| LCHIJA | libraryex          | 1.2.2          | LibraryEx-1.12.2-1.2.2.jar                      | None                                     |
+	| LCHIJA | lostcities         | 2.0.22         | lostcities-1.12-2.0.22.jar                      | None                                     |
+	| LCHIJA | netherex           | 2.2.5          | NetherEx-1.12.2-2.2.5.jar                       | None                                     |
+	| LCHIJA | netherbackport     | 1.0.0          | NetherUpdateBackport-1.12.2(1.0.1).jar          | None                                     |
+	| LCHIJA | nocubessrparmory   | 3.0.0          | NoCubes_SRP_Combat_Addon_3.0.0.jar              | None                                     |
+	| LCHIJA | nocubessrpnests    | 3.0.0          | NoCubes_SRP_Nests_Addon_3.0.0.jar               | None                                     |
+	| LCHIJA | nocubessrpsurvival | 3.0.0          | NoCubes_SRP_Survival_Addon_3.0.0.jar            | None                                     |
+	| LCHIJA | oreexcavation      | 1.4.150        | OreExcavation-1.4.150.jar                       | None                                     |
+	| LCHIJA | srparasites        | 1.9.21         | SRParasites-1.12.2v1.9.21.jar                   | None                                     |
+	| LCHIJA | overlast           | 0.0.2          | OverLast-Lite-1.12.2-0.05(for SRPV1920).jar     | None                                     |
+	| LCHIJA | playerrevive       | 1.0            | PlayerRevive_v1.2.40_mc1.12.2.jar               | None                                     |
+	| LCHIJA | silentlib          | 3.0.13         | SilentLib-1.12.2-3.0.14+168.jar                 | None                                     |
+	| LCHIJA | spartanshields     | 1.5.5          | SpartanShields-1.12.2-1.5.5.jar                 | None                                     |
+	| LCHIJA | spartanweaponry    | 1.6.0          | SpartanWeaponry-1.12.2-1.6.0.jar                | None                                     |
+	| LCHIJA | surge              | 2.0.79         | Surge-1.12.2-2.0.79.jar                         | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| LCHIJA | swparasites        | v3.1           | swparasites-v3.1.jar                            | None                                     |
+	| LCHIJA | traverse           | 1.6.0          | Traverse-1.12.2-1.6.0-69.jar                    | None                                     |
+	| LCHIJA | uteamcore          | 2.2.5.339      | u_team_core-forge-1.12.2-2.2.5.339.jar          | None                                     |
+	| LCHIJA | usefulbackpacks    | 1.5.4.85       | useful_backpacks-1.12.2-1.5.4.85.jar            | None                                     |
+	| LCHIJA | xaerominimap       | 25.0.0         | Xaeros_Minimap_25.0.0_Forge_1.12.jar            | None                                     |
+
+	Loaded coremods (and transformers): 
+CharmLoadingPlugin (Charm-1.12.2-1.4.1.jar)
+  svenhjol.charm.base.CharmClassTransformer
+XaeroMinimapPlugin (Xaeros_Minimap_25.0.0_Forge_1.12.jar)
+  xaero.common.core.transformer.ChunkTransformer
+  xaero.common.core.transformer.NetHandlerPlayClientTransformer
+  xaero.common.core.transformer.EntityPlayerTransformer
+  xaero.common.core.transformer.AbstractClientPlayerTransformer
+  xaero.common.core.transformer.WorldClientTransformer
+  xaero.common.core.transformer.EntityPlayerMPTransformer
+  xaero.common.core.transformer.EntityPlayerSPTransformer
+  xaero.common.core.transformer.PlayerListTransformer
+  xaero.common.core.transformer.SaveFormatTransformer
+  xaero.common.core.transformer.GuiIngameForgeTransformer
+  xaero.common.core.transformer.MinecraftServerTransformer
+  xaero.common.core.transformer.GuiBossOverlayTransformer
+  xaero.common.core.transformer.ModelRendererTransformer
+FutureMC (Future-MC-0.2.20.jar)
+  thedarkcolour.futuremc.asm.CoreTransformer
+SecurityCraftLoadingPlugin ([1.12.2] SecurityCraft v1.9.12.jar)
+  
+CreativePatchingLoader (CreativeCore_v1.10.71_mc1.12.2.jar)
+  
+SSLoadingPlugin (SereneSeasons-1.12.2-1.2.18-universal.jar)
+  sereneseasons.asm.transformer.EntityRendererTransformer
+  sereneseasons.asm.transformer.WorldTransformer
+Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.15-1.12.2.jar)
+  pl.asie.foamfix.coremod.FoamFixTransformer
+ForgelinPlugin (Forgelin-1.8.4.jar)
+  
+SpartanWeaponry-MixinLoader (SpartanWeaponry-1.12.2-1.6.0.jar)
+  
+TransformLoader (DynamicSurroundings-1.12.2-3.6.3.jar)
+  
+ObfuscatePlugin (obfuscate-0.4.2-1.12.2.jar)
+  com.mrcrayfish.obfuscate.asm.ObfuscateTransformer
+SurgeLoadingPlugin (Surge-1.12.2-2.0.79.jar)
+  
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 20; []
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
